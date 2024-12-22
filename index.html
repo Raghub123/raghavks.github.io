@@ -25,30 +25,23 @@
     <nav id="sidebar" class="bg-dark text-white">
         <div class="sidebar-header text-center">
             <img src="assets/profile-image.jpg" alt="Profile Image" class="profile-image">
-            <h3>Raghav</h3>
+            <!-- Remove name Raghav below the photo -->
         </div>
         <ul class="list-unstyled components">
-            <li>
-                <a href="#about" class="nav-link">
-                    <i class="fas fa-user fa-2x"></i> About
-                </a>
-            </li>
-            <li>
-                <a href="#projects" class="nav-link">
-                    <i class="fas fa-project-diagram fa-2x"></i> Projects
-                </a>
-            </li>
-            <li>
-                <a href="#resume" class="nav-link">
-                    <i class="fas fa-file-alt fa-2x"></i> Resume
-                </a>
-            </li>
-            <li>
-                <a href="#contact" class="nav-link">
-                    <i class="fas fa-envelope fa-2x"></i> Contact
-                </a>
-            </li>
+            <li><a href="#about" class="nav-link"><i class="fas fa-user fa-2x"></i> About</a></li>
+            <li><a href="#projects" class="nav-link"><i class="fas fa-project-diagram fa-2x"></i> Projects</a></li>
+            <li><a href="#resume" class="nav-link"><i class="fas fa-file-alt fa-2x"></i> Resume</a></li>
+            <li><a href="#certifications" class="nav-link"><i class="fas fa-certificate fa-2x"></i> Certifications</a></li>
+            <li><a href="#coding" class="nav-link"><i class="fas fa-code fa-2x"></i> Coding</a></li>
+            <li><a href="#blogs" class="nav-link"><i class="fas fa-book fa-2x"></i> Blogs/Books</a></li>
+            <li><a href="#contact" class="nav-link"><i class="fas fa-envelope fa-2x"></i> Contact</a></li>
         </ul>
+
+        <!-- Social Links -->
+        <div class="text-center mt-3">
+            <a href="https://github.com/yourusername" target="_blank" class="btn btn-dark"><i class="fab fa-github fa-2x"></i></a>
+            <a href="https://linkedin.com/in/yourlinkedin" target="_blank" class="btn btn-dark"><i class="fab fa-linkedin fa-2x"></i></a>
+        </div>
     </nav>
 
     <!-- Main Content Area -->
@@ -59,6 +52,7 @@
                 <div class="profile text-center">
                     <h1 class="display-4">Raghav Krishnakumar Sowmyanarayanan</h1>
                     <p class="lead">Lead Data Engineer | <span id="typed-text" class="typed-text"></span></p>
+                    <p id="disappear-text" class="lead text-muted">Lead Data Engineer</p>
                     <p>Explore my journey through Data Engineering and Machine Learning projects.</p>
                     <a href="#projects" class="btn btn-primary btn-lg">Explore Projects</a>
                 </div>
@@ -92,14 +86,40 @@
             </div>
         </section>
 
-        <!-- Resume Section -->
-        <section id="resume" class="py-5">
+        <!-- Certifications Section -->
+        <section id="certifications" class="py-5">
             <div class="container">
-                <h2 class="text-center">📄 Resume</h2>
-                <p class="text-center">Download my resume or view it directly below:</p>
-                <div class="text-center">
-                    <a href="assets/Raghav_Resume.pdf" class="btn btn-success" download>Download Resume</a>
-                </div>
+                <h2 class="text-center">🏅 Certifications</h2>
+                <ul>
+                    <li>Data Science Specialization - Coursera</li>
+                    <li>Machine Learning - Stanford University</li>
+                    <li>Apache Spark and Scala - Udemy</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Coding Section -->
+        <section id="coding" class="bg-light py-5">
+            <div class="container">
+                <h2 class="text-center">👨‍💻 Coding</h2>
+                <p>Check out my coding contributions:</p>
+                <ul>
+                    <li>GitHub Repositories: <a href="https://github.com/yourusername" target="_blank">My GitHub</a></li>
+                    <li>Code Challenges: <a href="https://www.hackerrank.com/yourusername" target="_blank">My HackerRank</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Blogs/Books Section -->
+        <section id="blogs" class="py-5">
+            <div class="container">
+                <h2 class="text-center">📚 Blogs and Books</h2>
+                <p>Here are a few books and blogs that I follow:</p>
+                <ul>
+                    <li>Data Science for Business - Foster Provost & Tom Fawcett</li>
+                    <li>Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow - Aurélien Géron</li>
+                    <li>Blogs: <a href="https://towardsdatascience.com/" target="_blank">Towards Data Science</a></li>
+                </ul>
             </div>
         </section>
 
@@ -162,7 +182,13 @@
             }
         }
 
-        window.onload = typeWriter;
+        window.onload = function() {
+            typeWriter();
+            setTimeout(() => {
+                document.getElementById("disappear-text").classList.add("text-muted");
+                document.getElementById("disappear-text").classList.add("text-decoration-line-through");
+            }, 3000);  // Strikethrough after 3 seconds
+        };
     </script>
 
 </body>
