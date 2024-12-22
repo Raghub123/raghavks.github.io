@@ -3,7 +3,7 @@ body {
     font-family: 'Roboto', sans-serif;
     background-color: #f4f4f4;
     color: #333;
-    scroll-behavior: smooth; /* Smooth scrolling */
+    scroll-behavior: smooth;
 }
 
 /* Sidebar */
@@ -25,22 +25,6 @@ body {
     margin-bottom: 10px;
 }
 
-#sidebar .nav-link {
-    color: #fff;
-    font-size: 18px;
-    padding: 15px;
-}
-
-#sidebar .nav-link:hover {
-    background-color: #444;
-}
-
-/* Main Content */
-#content {
-    margin-left: 260px; /* Account for sidebar width */
-    padding: 20px;
-}
-
 /* Hero Section */
 #hero {
     background-color: #007bff;
@@ -48,26 +32,30 @@ body {
     padding: 100px 0;
 }
 
-/* Typing Effect */
 #typed-text {
     border-right: 3px solid white;
     padding-right: 5px;
     font-weight: bold;
     font-size: 1.5rem;
     display: inline-block;
+    color: #ff6347; /* Change the color of 'Aspiring Data Scientist' */
 }
 
-/* Footer */
-footer {
-    background-color: #333;
-    color: white;
-}
-
+/* Additional Sections */
 section {
-    padding: 60px 0; /* Add padding to each section for spacing */
+    padding: 60px 0;
 }
 
-/* Project Section */
-#projects {
-    background-color: #f9f9f9;
+/* Social Links */
+#sidebar .btn {
+    margin: 0 10px;
+}
+
+/* Strikethrough Effect for Lead Data Engineer */
+.text-decoration-line-through {
+    text-decoration: line-through;
+}
+
+.text-muted {
+    color: #6c757d !important;
 }
