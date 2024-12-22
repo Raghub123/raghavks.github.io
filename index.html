@@ -4,43 +4,197 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Rajagopal's Portfolio</title>
+  <title>Raghav's Portfolio</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="data:image/png;base64,...base64FaviconData..." rel="icon">
+  <link href="data:image/png;base64,...base64AppleTouchIconData..." rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <style>
+    /* ===========================================================
+      * General Styles
+      ============================================================ */
+    body {
+      font-family: 'Open Sans', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f7fa;
+      color: #333;
+    }
 
-  <!-- Template Main CSS File -->
-  <link href="assets/style.css" rel="stylesheet"> <!-- This is where you link your style.css -->
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
 
-  <!-- =======================================================
-  * Template Name: MyResume - v4.9.2
-  * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+    .section-title {
+      margin-bottom: 30px;
+    }
+
+    .section-title h2 {
+      font-size: 30px;
+      color: #444;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 30px;
+    }
+
+    .social-links {
+      display: flex;
+      gap: 10px;
+    }
+
+    .social-links a {
+      text-decoration: none;
+      color: #333;
+      font-size: 20px;
+      transition: all 0.3s;
+    }
+
+    .social-links a:hover {
+      color: #007bff;
+    }
+
+    /* Hero Section */
+    #hero {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: url('data:image/png;base64,...base64HeroBackgroundData...') no-repeat center center/cover;
+      text-align: center;
+      color: white;
+    }
+
+    #hero h1 {
+      font-size: 60px;
+      margin-bottom: 10px;
+    }
+
+    #hero p {
+      font-size: 24px;
+      font-weight: 400;
+    }
+
+    /* About Section */
+    #about {
+      padding: 60px 0;
+      background: #fff;
+    }
+
+    #about .me {
+      text-align: justify;
+    }
+
+    /* Facts Section */
+    #facts {
+      background: #f8f9fa;
+      padding: 60px 0;
+    }
+
+    .facts img {
+      width: 200px;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+
+    /* Scroll Animation */
+    .aos {
+      opacity: 0;
+      transition: all 0.5s ease-in-out;
+    }
+
+    .aos.visible {
+      opacity: 1;
+    }
+  </style>
+
 </head>
 
 <body>
-  <!-- Your HTML content goes here -->
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2024 Rajagopal's Portfolio. All rights reserved.</p>
-  </footer>
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex flex-column justify-content-center">
+    <nav id="navbar" class="navbar nav-menu">
+      <ul>
+        <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+        <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+        <li><a href="#services" class="nav-link scrollto"><i class="bx bx-folder"></i> <span>Projects</span></a></li>
+        <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-award"></i> <span>Certificates</span></a></li>
+        <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+      </ul>
+    </nav><!-- .nav-menu -->
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center">
+    <div class="container" data-aos="zoom-in" data-aos-delay="100">
+      <h1>Raghav KS</h1>
+      <p><span class="typed" data-typed-items="AI/ML Engineer, Computer Vision, GenAI"></span></p>
+      <div class="social-links">
+        <a href="https://github.com/rajag0pal" class="twitter"><i class="bx bxl-github"></i></a>
+        <a href="https://www.linkedin.com/in/raja-gopal2001416/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        <a href="https://www.linkedin.com/in/raja-gopal2001416/" class="medium"><i class="bi bi-medium"></i></a>
+      </div>
+    </div>
+  </section><!-- End Hero -->
+
+  <!-- ======= About Section ======= -->
+  <section id="about" class="about">
+    <div class="container" data-aos="fade-up">
+      <div class="section-title">
+        <h2>About</h2>
+      </div>
+      <div class="row">
+        <img src="data:image/png;base64,...base64ProfileImageData..." style="width:20%; margin-left: 2%;">
+        <p class="me" style="width:70%; margin-left: 0%; margin-top: 2%; text-align: justify;">
+          Experienced AI Engineer, contributing to the development of cutting-edge AI software solutions at Seewise.ai...
+          <!-- Your entire about text here -->
+        </p>
+      </div>  
+    </div>    
+  </section><!-- End About Section -->
+
+  <!-- ======= Facts Section ======= -->
+  <section id="facts" class="facts">
+    <div class="container" data-aos="fade-up">
+      <div class="section-title">
+        <h2>Tools I Work with</h2>
+      </div>
+      <div class="row">
+        <div class="col-lg-8 offset-lg-1 text-center">
+          <img src="data:image/png;base64,...base64ToolImageData..." alt="" style="height:160px;">
+        </div>
+      </div>
+    </div>
+  </section><!-- End Facts Section -->
+
+  <script>
+    // Custom JavaScript for scroll animations and interactivity
+    document.addEventListener('DOMContentLoaded', function () {
+      // Scroll animations
+      var elements = document.querySelectorAll('[data-aos]');
+      elements.forEach(function (element) {
+        if (window.scrollY + window.innerHeight > element.offsetTop) {
+          element.classList.add('visible');
+        }
+      });
+    });
+  </script>
 
 </body>
 
