@@ -1,0 +1,45 @@
+# Site settings
+title: "Raghav Krishnakumar Sowmyanarayanan"
+description: "A portfolio to showcase my projects and skills."
+url: "https://raghavks.github.io"  # Replace with your GitHub Pages URL
+baseurl: ""  # Change this if you're using docs folder as source
+
+# Author info
+author:
+  name: "Raghav"
+  email: "mailmeraghav123@gmail.com"
+  url: "https://www.linkedin.com/in/raghav-krishnakumar-sowmyanarayanan-7a703a16b/"  # Link to your personal website or LinkedIn
+
+# Build settings
+markdown: kramdown
+theme: jekyll-theme-minimal  # You can change this to any other Jekyll theme
+plugins:
+  - jekyll-feed  # This plugin generates an RSS feed for your website
+  - jekyll-seo-tag  # This plugin adds SEO-friendly meta tags to your site
+
+# Social Media links (replace with your own social media URLs)
+social_links:
+  github: "https://raghavks.github.io"
+  twitter: "https://twitter.com/yourusername"
+  linkedin: "https://www.linkedin.com/in/raghav-krishnakumar-sowmyanarayanan-7a703a16b/"
+
+# Portfolio Settings
+projects:
+  - name: "Project 1"
+    description: "A brief description of your project."
+    url: "https://github.com/yourusername/project1"
+    technologies: ["HTML", "CSS", "JavaScript"]
+  - name: "Project 2"
+    description: "A brief description of your second project."
+    url: "https://github.com/yourusername/project2"
+    technologies: ["Python", "Flask", "SQLite"]
+  # Add more projects as needed
+
+# Navigation settings (Menu items for your portfolio)
+navbar:
+  - title: "Home"
+    url: "/"
+  - title: "Projects"
+    url: "/projects"
+  - title: "About Me"
+    url: "/about"
