@@ -25,7 +25,7 @@
     <nav id="sidebar" class="bg-dark text-white">
         <div class="sidebar-header text-center">
             <img src="assets/profile-image.jpg" alt="Profile Image" class="profile-image">
-            <h3></h3>
+            <h3>Raghav</h3>
         </div>
         <ul class="list-unstyled components">
             <li>
@@ -58,7 +58,7 @@
             <div class="container">
                 <div class="profile text-center">
                     <h1 class="display-4">Raghav Krishnakumar Sowmyanarayanan</h1>
-                    <p class="lead">Lead Data Engineer | Aspiring Data Scientist</p>
+                    <p class="lead">Lead Data Engineer | <span id="typed-text" class="typed-text"></span></p>
                     <p>Explore my journey through Data Engineering and Machine Learning projects.</p>
                     <a href="#projects" class="btn btn-primary btn-lg">Explore Projects</a>
                 </div>
@@ -69,12 +69,7 @@
         <section id="about" class="py-5">
             <div class="container">
                 <h2 class="text-center">🚀 About Me</h2>
-                <p>I have over 9 years of experience in data engineering and am transitioning to Data Science.
-                    My expertise includes building data pipelines, creating machine learning models,
-                    and solving real-world business problems using data.
-                Experienced AI Engineer, contributing to the development of cutting-edge AI software solutions at Seewise.ai, specializing in computer vision applications. I take care of crafting clean and efficient code for various components of the machine learning pipeline, particularly focusing on object detection and image classification tasks. Also evaluating model performance using key metrics like accuracy and precision, ensuring optimal computational efficiency. Instrumental in integrating ML models into production systems, emphasizing seamless deployment and scalability while optimizing for inference speed and memory efficiency. Recognized for identifying and addressing performance bottlenecks, enhancing system speed and resource utilization. Previous achievements include leading the development of an AI framework at Microbiological Laboratory Research and Services, resulting in a significant improvement in result delivery speed. Additionally, contributed to the creation of PyHRM, an open-source Python library for efficient signal processing and feature extraction in PCR products, and developed an AI tool for hashtag identification in images using pre-trained models. Proficient in AI-based frameworks, machine learning algorithms, clean code writing, and effective integration and deployment practices, with a strong emphasis on business logic development and software optimization.
-
-Holds a Master's degree in Data Analytics and proficient in Python, R, C++, SQL, and various libraries/tools. Skilled in data wrangling, exploratory data analysis, feature engineering, machine learning techniques, and model deployment.</p>
+                <p>I have over 9 years of experience in data engineering and am transitioning to Data Science. My expertise includes building data pipelines, creating machine learning models, and solving real-world business problems using data.</p>
             </div>
         </section>
 
@@ -153,6 +148,21 @@ Holds a Master's degree in Data Analytics and proficient in Python, R, C++, SQL,
                 });
             });
         });
+
+        // Typing Effect
+        const typedText = document.getElementById("typed-text");
+        const text = "Aspiring Data Scientist";
+
+        let i = 0;
+        function typeWriter() {
+            if (i < text.length) {
+                typedText.innerHTML += text.charAt(i);
+                i++;
+                setTimeout(typeWriter, 100); // Delay to create typing effect
+            }
+        }
+
+        window.onload = typeWriter;
     </script>
 
 </body>
