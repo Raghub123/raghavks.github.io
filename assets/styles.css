@@ -165,8 +165,9 @@ body {
 
 /* Contact Section */
 .contact {
-    background-color: #f7f7f7;
-    padding: 60px 0;
+    padding: 60px 30px;
+    background-color: #f4f7fb;
+    text-align: center;
 }
 
 .contact h2 {
@@ -177,22 +178,12 @@ body {
 
 .contact ul {
     list-style: none;
-    text-align: center;
+    padding: 0;
+}
+
+.contact ul li {
     font-size: 1.2rem;
-}
-
-.contact li {
     margin-bottom: 15px;
-}
-
-.contact a {
-    color: #2b2d42;
-    text-decoration: none;
-    font-weight: 500;
-}
-
-.contact a:hover {
-    color: #ff6347;
 }
 
 /* Footer */
@@ -200,6 +191,9 @@ footer {
     background-color: #2b2d42;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 20px 0;
+}
+
+footer p {
     font-size: 1rem;
 }
