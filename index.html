@@ -51,8 +51,9 @@
             <div class="container">
                 <div class="profile text-center">
                     <h1 class="display-4">Raghav Krishnakumar Sowmyanarayanan</h1>
-                    <p class="lead">Lead Data Engineer | <span id="typed-text" class="typed-text"></span></p>
-                    <p id="disappear-text" class="lead text-muted">Lead Data Engineer</p>
+                    <p class="lead">
+                        <span id="lead-text" class="lead-text">Lead Data Engineer</span> | <span id="typed-text" class="typed-text"></span>
+                    </p>
                     <p>Explore my journey through Data Engineering and Machine Learning projects.</p>
                     <a href="#projects" class="btn btn-primary btn-lg">Explore Projects</a>
                 </div>
@@ -171,6 +172,7 @@
 
         // Typing Effect
         const typedText = document.getElementById("typed-text");
+        const leadText = document.getElementById("lead-text");
         const text = "Aspiring Data Scientist";
 
         let i = 0;
@@ -182,12 +184,15 @@
             }
         }
 
-        window.onload = function() {
+        window.onload = function () {
+            // Start typing effect
             typeWriter();
+
+            // After typing, fade out the lead text
             setTimeout(() => {
-                document.getElementById("disappear-text").style.transition = "opacity 2s ease";
-                document.getElementById("disappear-text").style.opacity = "0"; // Fade out "Lead Data Engineer"
-            }, 3000);  // Fade out after 3 seconds
+                leadText.style.transition = "opacity 2s ease";
+                leadText.style.opacity = "0"; // Fade out "Lead Data Engineer"
+            }, 3000);  // Fade out after typing effect is finished
         };
     </script>
 
