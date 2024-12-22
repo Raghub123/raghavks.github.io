@@ -2,106 +2,146 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Raghav Krishnakumar Sowmyanarayanan - Data Scientist/ML Aspirant | Lead Data Engineer">
-  <meta name="author" content="Raghav Krishnakumar Sowmyanarayanan">
-  <title>Raghav Krishnakumar Sowmyanarayanan - Portfolio</title>
-  <link rel="stylesheet" href="assets/styles.css"> 
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Raghav Krishnakumar Sowmyanarayanan - Data Scientist/ML Aspirant | Lead Data Engineer">
+    <meta name="author" content="Raghav Krishnakumar Sowmyanarayanan">
+    <meta name="keywords" content="Data Science, Machine Learning, Data Engineer, Portfolio">
+    <meta name="robots" content="index, follow">
+    <title>Raghav Krishnakumar Sowmyanarayanan - Portfolio</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS (styles.css) -->
+    <link rel="stylesheet" href="assets/styles.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <header class="hero-header"> 
-    <nav class="navbar">
-      <div class="container">
-        <a href="#" class="logo">Raghav</a>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
 
-    <div class="hero-content"> 
-      <h1>Raghav Krishnakumar Sowmyanarayanan</h1>
-      <p>Lead Data Engineer | Aspiring Data Scientist</p>
-      <p>Welcome to my world of data. Let's explore my journey, projects, and passions.</p>
-      <a href="#projects" class="cta-btn">Explore Projects</a>
-    </div>
-  </header>
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #2b2d42;">
+            <div class="container">
+                <a class="navbar-brand text-white" href="#">Raghav</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link text-white" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#resume">Resume</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-  <section id="about" class="section about">
-    <div class="container">
-      <div class="about-content"> 
-        <h2>🚀 About Me</h2>
-        <p>I have over **9.3 years** of experience in **data engineering**, and I am currently transitioning into Data Science. My experience spans building scalable data pipelines, machine learning models, and solving complex business problems through data.</p>
-        <h3>Key Skills & Technologies</h3>
-        <ul class="skills-list">
-          <li><strong>Programming Languages:</strong> Python, SQL</li>
-          <li><strong>Data Engineering:</strong> Apache Spark, Kafka, Airflow, ETL Pipelines</li>
-          <li><strong>Data Science:</strong> Scikit-learn, TensorFlow, Machine Learning Models</li>
-          <li><strong>Big Data:</strong> Spark, Hive, HBase</li>
-          <li><strong>Cloud:</strong> AWS (S3, EC2, Lambda), Google Cloud</li>
-          <li><strong>Data Visualization:</strong> Tableau, Matplotlib, Seaborn</li>
-        </ul>
-      </div>
-      <div class="about-image"> 
-        <img src="/assets/profile-image.jpg" alt="Your Profile Image"> 
-      </div>
-    </div>
-  </section>
-
-  <section id="projects" class="section projects">
-    <div class="container">
-      <h2>📈 Projects</h2>
-      <div class="project-cards">
-        <div class="project-card">
-          <img src="path/to/project1-image.jpg" alt="Project 1 Image"> 
-          <h3>Real-Time Data Pipeline</h3>
-          <p>Built a real-time data pipeline using Apache Kafka and Apache Spark for financial analytics.</p>
-          <a href="https://github.com/yourusername/project1" target="_blank" class="btn">View Project</a>
+    <!-- Hero Section -->
+    <section id="hero" class="hero text-center py-5">
+        <div class="container">
+            <h1 class="display-4">Raghav Krishnakumar Sowmyanarayanan</h1>
+            <p class="lead">Lead Data Engineer | Aspiring Data Scientist</p>
+            <p>Explore my journey through Data Engineering and Machine Learning projects.</p>
+            <a href="#projects" class="btn btn-primary btn-lg">Explore Projects</a>
         </div>
-        <div class="project-card">
-          <img src="path/to/project2-image.jpg" alt="Project 2 Image"> 
-          <h3>Customer Churn Prediction</h3>
-          <p>Developed a machine learning model to predict customer churn using logistic regression and decision trees.</p>
-          <a href="https://github.com/yourusername/project2" target="_blank" class="btn">View Project</a>
-        </div>
-        <div class="project-card">
-          <img src="path/to/project3-image.jpg" alt="Project 3 Image"> 
-          <h3>Sales Forecasting</h3>
-          <p>Built a time series forecasting model using ARIMA to predict sales for a retail company.</p>
-          <a href="https://github.com/yourusername/project3" target="_blank" class="btn">View Project</a>
-        </div>
-        <div class="project-card">
-          <img src="path/to/project4-image.jpg" alt="Project 4 Image"> 
-          <h3>NLP Text Classification</h3>
-          <p>Implemented a Natural Language Processing (NLP) model for text classification of customer feedback.</p>
-          <a href="https://github.com/yourusername/project4" target="_blank" class="btn">View Project</a>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="contact" class="section contact">
-    <div class="container">
-      <h2>📬 Get in Touch</h2>
-      <p>Feel free to reach out for collaborations, discussions, or any questions you might have about my work.</p>
-      <ul>
-        <li><strong>Email:</strong> <a href="mailto:mailmeraghav123@gmail.com">mailmeraghav123@gmail.com</a></li>
-        <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/raghav-krishnakumar-sowmyanarayanan-7a703a16b/" target="_blank">LinkedIn</a></li>
-        <li><strong>GitHub:</strong> <a href="https://github.com/raghub123" target="_blank">GitHub</a></li>
-      </ul>
-    </div>
-  </section>
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="text-center" data-aos="fade-up">🚀 About Me</h2>
+            <p data-aos="fade-up" data-aos-delay="100">I have over 9 years of experience in data engineering and am transitioning to Data Science. My expertise includes building data pipelines, creating machine learning models, and solving real-world business problems using data.</p>
+        </div>
+    </section>
 
-  <footer>
-    <div class="container">
-      <p>&copy; 2024 Raghav Krishnakumar Sowmyanarayanan. All Rights Reserved.</p>
-    </div>
-  </footer>
+    <!-- Projects Section -->
+    <section id="projects" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center" data-aos="fade-up">📈 Projects</h2>
+            <div class="row">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card">
+                        <img src="project1.jpg" class="card-img-top" alt="Project 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Real-Time Data Pipeline</h5>
+                            <p class="card-text">Developed a real-time data pipeline using Apache Kafka and Spark for financial analytics.</p>
+                            <a href="#" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repeat similar structure for other projects -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="py-5">
+        <div class="container">
+            <h2 class="text-center" data-aos="fade-up">📄 Resume</h2>
+            <p class="text-center" data-aos="fade-up" data-aos-delay="100">Download my resume or view it directly below:</p>
+            <div class="text-center">
+                <a href="assets/Raghav_Resume.pdf" class="btn btn-success" download>Download Resume</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-dark text-white py-5">
+        <div class="container">
+            <h2 class="text-center" data-aos="fade-up">📬 Get in Touch</h2>
+            <form id="contact-form" action="contact.php" method="POST" data-aos="fade-up" data-aos-delay="200">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Raghav Krishnakumar Sowmyanarayanan. All Rights Reserved.</p>
+    </footer>
+
+    <!-- jQuery, Popper.js, Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
 </body>
 
 </html>
