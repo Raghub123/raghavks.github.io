@@ -9,205 +9,38 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="https://cdn.jsdelivr.net/gh/rajag0pal/portfolio/assets/img/favicon.png" rel="icon">
-  <link href="https://cdn.jsdelivr.net/gh/rajag0pal/portfolio/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <style>
-    /* Custom Styles for the Portfolio */
-    body {
-      font-family: 'Open Sans', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f7fa;
-    }
+  <link href="assets/style.css" rel="stylesheet"> <!-- This is where you link your style.css -->
 
-    .nav-link.active {
-      color: #007bff;
-    }
-
-    .section-title h2 {
-      font-size: 2rem;
-      font-weight: bold;
-      margin-bottom: 20px;
-    }
-
-    /* Scroll Animations */
-    .aos-animate {
-      opacity: 0;
-      transform: translate3d(0, 40px, 0);
-      animation: aos-init 1s ease-out forwards;
-    }
-
-    @keyframes aos-init {
-      0% {
-        opacity: 0;
-        transform: translate3d(0, 40px, 0);
-      }
-
-      100% {
-        opacity: 1;
-        transform: translate3d(0, 0, 0);
-      }
-    }
-
-    /* Hero Section */
-    #hero {
-      background-color: #007bff;
-      color: white;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-    }
-
-    .social-links {
-      margin-top: 20px;
-    }
-
-    .social-links a {
-      font-size: 24px;
-      color: white;
-      margin: 0 10px;
-      transition: all 0.3s ease;
-    }
-
-    .social-links a:hover {
-      color: #ffcc00;
-    }
-
-    .me {
-      margin-left: 5%;
-    }
-
-    /* About Section */
-    .about img {
-      border-radius: 50%;
-      margin-right: 20px;
-    }
-
-    .about p {
-      font-size: 1rem;
-      line-height: 1.6;
-    }
-
-    /* Fact Section */
-    .facts img {
-      width: 150px;
-      margin: 20px;
-    }
-  </style>
-
+  <!-- =======================================================
+  * Template Name: MyResume - v4.9.2
+  * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
 
 <body>
+  <!-- Your HTML content goes here -->
 
-  <!-- Mobile nav toggle button -->
-  <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
-
-  <!-- Header Section -->
-  <header id="header" class="d-flex flex-column justify-content-center">
-    <nav id="navbar" class="navbar nav-menu">
-      <ul>
-        <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-        <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
-        <li><a href="#services" class="nav-link scrollto"><i class="bx bx-folder"></i> <span>Projects</span></a></li>
-        <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-award"></i> <span>Certificates</span></a></li>
-        <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- Hero Section -->
-  <section id="hero" class="d-flex flex-column justify-content-center">
-    <div class="container" data-aos="zoom-in" data-aos-delay="100">
-      <h1>Rajagopal S</h1>
-      <p><span class="typed" data-typed-items="AI/ML Engineer, Computer Vision, GenAI"></span></p>
-      <div class="social-links">
-        <a href="https://github.com/rajag0pal" class="twitter"><i class="bx bxl-github"></i></a>
-        <a href="https://www.linkedin.com/in/raja-gopal2001416/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-        <a href="https://www.linkedin.com/in/raja-gopal2001416/" class="medium"><i class="bi bi-medium"></i></a>
-      </div>
-    </div>
-  </section>
-
-  <main id="main">
-
-    <!-- About Section -->
-    <section id="about" class="about">
-      <div class="container" data-aos="fade-up">
-        <div class="section-title">
-          <h2>About</h2>
-          <div class="row">
-            <img src="https://cdn.jsdelivr.net/gh/rajag0pal/portfolio/assets/img/profile.png" style="width:20%;margin-left: 2%;">
-            <p class="me" style="width:70%; margin-left: 0%; margin-top: 2%; text-align: justify;">Experienced AI Engineer, contributing to the development of cutting-edge AI software solutions at Seewise.ai, specializing in computer vision applications. I take care of crafting clean and efficient code for various components of the machine learning pipeline, particularly focusing on object detection and image classification tasks. Also evaluating model performance using key metrics like accuracy and precision, ensuring optimal computational efficiency. Instrumental in integrating ML models into production systems, emphasizing seamless deployment and scalability while optimizing for inference speed and memory efficiency. Recognized for identifying and addressing performance bottlenecks, enhancing system speed and resource utilization. Previous achievements include leading the development of an AI framework at Microbiological Laboratory Research and Services, resulting in a significant improvement in result delivery speed. Additionally, contributed to the creation of PyHRM, an open-source Python library for efficient signal processing and feature extraction in PCR products, and developed an AI tool for hashtag identification in images using pre-trained models. Proficient in AI-based frameworks, machine learning algorithms, clean code writing, and effective integration and deployment practices, with a strong emphasis on business logic development and software optimization. <br><br>Holds a Master's degree in Data Analytics and proficient in Python, R, C++, SQL, and various libraries/tools. Skilled in data wrangling, exploratory data analysis, feature engineering, machine learning techniques, and model deployment.</p>
-          </div>  
-        </div>    
-      </div>
-    </section>
-
-    <!-- Facts Section -->
-    <section id="facts" class="facts">
-      <div class="container" data-aos="fade-up">
-        <div class="section-title">
-          <h2>Tools I Work with</h2>
-        </div>
-        <div class="row">
-          <div class="col-lg-8 offset-lg-1 text-center">
-            <img src="https://cdn.jsdelivr.net/gh/rajag0pal/portfolio/assets/img/aoi.png" alt="" style="height:160px;">
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- Vendor JS Files -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-
-  <!-- Main JS File -->
-  <script>
-    // Initialize AOS
-    AOS.init({
-      duration: 1200,
-      easing: 'ease-in-out',
-      once: true,
-      mirror: false
-    });
-
-    // Smooth scroll for nav links
-    const scrollLinks = document.querySelectorAll('.scrollto');
-    scrollLinks.forEach(link => {
-      link.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        window.scrollTo({
-          top: target.offsetTop - 60,
-          behavior: 'smooth',
-        });
-      });
-    });
-
-    // Mobile nav toggle
-    const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
-    const navbar = document.querySelector('#navbar');
-    mobileNavToggle.addEventListener('click', () => {
-      navbar.classList.toggle('navbar-mobile');
-    });
-  </script>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Rajagopal's Portfolio. All rights reserved.</p>
+  </footer>
 
 </body>
 
