@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,22 +11,15 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- AOS Animation Library -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-    <!-- Custom CSS (styles.css) -->
+    
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/styles.css">
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-
+    
     <!-- Font Awesome Icons -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 </head>
 
 <body>
-
     <!-- Left Side Navigation Bar -->
     <nav id="sidebar" class="bg-dark text-white">
         <div class="sidebar-header text-center">
@@ -36,23 +28,23 @@
         </div>
         <ul class="list-unstyled components">
             <li>
-                <a href="#about" class="nav-link" data-toggle="tooltip" data-placement="right" title="About">
-                    <i class="fas fa-user fa-2x"></i>
+                <a href="#about" class="nav-link">
+                    <i class="fas fa-user fa-2x"></i> About
                 </a>
             </li>
             <li>
-                <a href="#projects" class="nav-link" data-toggle="tooltip" data-placement="right" title="Projects">
-                    <i class="fas fa-project-diagram fa-2x"></i>
+                <a href="#projects" class="nav-link">
+                    <i class="fas fa-project-diagram fa-2x"></i> Projects
                 </a>
             </li>
             <li>
-                <a href="#resume" class="nav-link" data-toggle="tooltip" data-placement="right" title="Resume">
-                    <i class="fas fa-file-alt fa-2x"></i>
+                <a href="#resume" class="nav-link">
+                    <i class="fas fa-file-alt fa-2x"></i> Resume
                 </a>
             </li>
             <li>
-                <a href="#contact" class="nav-link" data-toggle="tooltip" data-placement="right" title="Contact">
-                    <i class="fas fa-envelope fa-2x"></i>
+                <a href="#contact" class="nav-link">
+                    <i class="fas fa-envelope fa-2x"></i> Contact
                 </a>
             </li>
         </ul>
@@ -62,7 +54,7 @@
     <div id="content">
         <!-- Hero Section -->
         <section id="hero" class="hero text-center py-5">
-            <div class="container d-flex flex-column justify-content-center align-items-center">
+            <div class="container">
                 <div class="profile text-center">
                     <h1 class="display-4">Raghav Krishnakumar Sowmyanarayanan</h1>
                     <p class="lead">Lead Data Engineer | Aspiring Data Scientist</p>
@@ -75,17 +67,17 @@
         <!-- About Section -->
         <section id="about" class="py-5">
             <div class="container">
-                <h2 class="text-center" data-aos="fade-up">🚀 About Me</h2>
-                <p data-aos="fade-up" data-aos-delay="100">I have over 9 years of experience in data engineering and am transitioning to Data Science. My expertise includes building data pipelines, creating machine learning models, and solving real-world business problems using data.</p>
+                <h2 class="text-center">🚀 About Me</h2>
+                <p>I have over 9 years of experience in data engineering and am transitioning to Data Science. My expertise includes building data pipelines, creating machine learning models, and solving real-world business problems using data.</p>
             </div>
         </section>
 
         <!-- Projects Section -->
         <section id="projects" class="bg-light py-5">
             <div class="container">
-                <h2 class="text-center" data-aos="fade-up">📈 Projects</h2>
+                <h2 class="text-center">📈 Projects</h2>
                 <div class="row">
-                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="col-md-4">
                         <div class="card">
                             <img src="project1.jpg" class="card-img-top" alt="Project 1">
                             <div class="card-body">
@@ -102,8 +94,8 @@
         <!-- Resume Section -->
         <section id="resume" class="py-5">
             <div class="container">
-                <h2 class="text-center" data-aos="fade-up">📄 Resume</h2>
-                <p class="text-center" data-aos="fade-up" data-aos-delay="100">Download my resume or view it directly below:</p>
+                <h2 class="text-center">📄 Resume</h2>
+                <p class="text-center">Download my resume or view it directly below:</p>
                 <div class="text-center">
                     <a href="assets/Raghav_Resume.pdf" class="btn btn-success" download>Download Resume</a>
                 </div>
@@ -113,8 +105,8 @@
         <!-- Contact Section -->
         <section id="contact" class="bg-dark text-white py-5">
             <div class="container">
-                <h2 class="text-center" data-aos="fade-up">📬 Get in Touch</h2>
-                <form id="contact-form" action="contact.php" method="POST" data-aos="fade-up" data-aos-delay="200">
+                <h2 class="text-center">📬 Get in Touch</h2>
+                <form id="contact-form" action="contact.php" method="POST">
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <label for="name">Name</label>
@@ -140,17 +132,12 @@
         </footer>
     </div>
 
-    <!-- jQuery, Popper.js, Bootstrap JS -->
+    <!-- jQuery, Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-    <!-- AOS Animation Library -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        // Initialize AOS
-        AOS.init();
-
         // Smooth scrolling for navigation
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
@@ -163,5 +150,4 @@
     </script>
 
 </body>
-
 </html>
