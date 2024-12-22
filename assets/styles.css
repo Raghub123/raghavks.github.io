@@ -7,19 +7,19 @@
 
 /* Typography */
 body {
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px; /* Base font size */
+  font-family: 'Roboto', sans-serif; 
+  font-size: 16px; 
   line-height: 1.6;
   color: #333;
-  background-color: #f4f7fb;
+  background-color: #f4f7fb; 
   scroll-behavior: smooth;
 }
 
 /* Colors */
 :root {
-  --primary-color: #2b2d42; /* Dark Blue */
-  --accent-color: #ff6347; /* Orange */
-  --light-gray: #f4f7fb; /* Light Gray */
+  --primary-color: #2b2d42; 
+  --accent-color: #ff6347; 
+  --light-gray: #f4f7fb; 
 }
 
 /* Global Styles */
@@ -39,7 +39,7 @@ body {
 }
 
 .navbar .logo {
-  font-size: 1.5rem; /* Adjust font size */
+  font-size: 1.5rem; 
   font-weight: 600;
   color: white;
   text-transform: uppercase;
@@ -71,14 +71,17 @@ body {
 
 /* Hero Section */
 .hero {
-  background: linear-gradient(135deg, #4a90e2, #6c5ce7); 
+  /* Background Image */
+  background-image: url('https://github.com/Raghub123/raghavks.github.io/tree/main/assets/profile-image.jpg'); 
+  background-position: center center;
+  background-size: cover; 
   color: white;
   text-align: center;
-  padding: 8rem 2rem; /* Adjust padding */
+  padding: 10rem 0; /* Adjust padding */
 }
 
 .hero h1 {
-  font-size: 2.5rem;
+  font-size: 3rem; 
   font-weight: 700;
   margin-bottom: 1rem;
 }
@@ -100,13 +103,26 @@ body {
 }
 
 .hero .cta-btn:hover {
-  background-color: darken(var(--accent-color), 10%); /* Darken accent color */
+  background-color: darken(var(--accent-color), 10%); 
 }
 
 /* About Section */
 .about {
   padding: 6rem 0;
   text-align: center;
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+}
+
+.about-text {
+  flex: 1; 
+  margin-right: 2rem; 
+}
+
+.about-image {
+  flex: 1; 
+  text-align: center; 
 }
 
 .about h2 {
@@ -142,16 +158,25 @@ body {
   background-color: white;
   padding: 2rem;
   margin: 1.5rem;
-  width: 45%;
+  width: 45%; 
   border-radius: 1rem;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
   text-align: center;
+  overflow: hidden; 
   transition: all 0.3s ease;
 }
 
 .project-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+.project-card img { 
+  transition: transform 0.3s ease; 
+}
+
+.project-card:hover img {
+  transform: scale(1.1); 
 }
 
 .project-card h3 {
