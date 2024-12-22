@@ -2,199 +2,154 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Raghav's Portfolio</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-
-  <!-- Favicons -->
-  <link href="data:image/png;base64,...base64FaviconData..." rel="icon">
-  <link href="data:image/png;base64,...base64AppleTouchIconData..." rel="apple-touch-icon">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <style>
-    /* ===========================================================
-      * General Styles
-      ============================================================ */
-    body {
-      font-family: 'Open Sans', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f7fa;
-      color: #333;
-    }
-
-    h1, h2, h3, h4, h5, h6 {
-      font-family: 'Poppins', sans-serif;
-      font-weight: 600;
-      margin-bottom: 10px;
-    }
-
-    .section-title {
-      margin-bottom: 30px;
-    }
-
-    .section-title h2 {
-      font-size: 30px;
-      color: #444;
-    }
-
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 30px;
-    }
-
-    .social-links {
-      display: flex;
-      gap: 10px;
-    }
-
-    .social-links a {
-      text-decoration: none;
-      color: #333;
-      font-size: 20px;
-      transition: all 0.3s;
-    }
-
-    .social-links a:hover {
-      color: #007bff;
-    }
-
-    /* Hero Section */
-    #hero {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      background: url('data:image/png;base64,...base64HeroBackgroundData...') no-repeat center center/cover;
-      text-align: center;
-      color: white;
-    }
-
-    #hero h1 {
-      font-size: 60px;
-      margin-bottom: 10px;
-    }
-
-    #hero p {
-      font-size: 24px;
-      font-weight: 400;
-    }
-
-    /* About Section */
-    #about {
-      padding: 60px 0;
-      background: #fff;
-    }
-
-    #about .me {
-      text-align: justify;
-    }
-
-    /* Facts Section */
-    #facts {
-      background: #f8f9fa;
-      padding: 60px 0;
-    }
-
-    .facts img {
-      width: 200px;
-      height: auto;
-      display: block;
-      margin: 0 auto;
-    }
-
-    /* Scroll Animation */
-    .aos {
-      opacity: 0;
-      transition: all 0.5s ease-in-out;
-    }
-
-    .aos.visible {
-      opacity: 1;
-    }
-  </style>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Raghav Krishnakumar Sowmyanarayanan - Data Scientist/ML Aspirant | Lead Data Engineer">
+    <meta name="author" content="Raghav Krishnakumar Sowmyanarayanan">
+    <meta name="keywords" content="Data Science, Machine Learning, Data Engineer, Portfolio">
+    <meta name="robots" content="index, follow">
+    <title>Raghav Krishnakumar Sowmyanarayanan - Portfolio</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS (styles.css) -->
+    <link rel="stylesheet" href="assets/styles.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 </head>
 
 <body>
 
-  <!-- ======= Mobile nav toggle button ======= -->
-  <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
-
-  <!-- ======= Header ======= -->
-  <header id="header" class="d-flex flex-column justify-content-center">
-    <nav id="navbar" class="navbar nav-menu">
-      <ul>
-        <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-        <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
-        <li><a href="#services" class="nav-link scrollto"><i class="bx bx-folder"></i> <span>Projects</span></a></li>
-        <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-award"></i> <span>Certificates</span></a></li>
-        <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
-      </ul>
-    </nav><!-- .nav-menu -->
-  </header><!-- End Header -->
-
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex flex-column justify-content-center">
-    <div class="container" data-aos="zoom-in" data-aos-delay="100">
-      <h1>Raghav KS</h1>
-      <p><span class="typed" data-typed-items="AI/ML Engineer, Computer Vision, GenAI"></span></p>
-      <div class="social-links">
-        <a href="https://github.com/rajag0pal" class="twitter"><i class="bx bxl-github"></i></a>
-        <a href="https://www.linkedin.com/in/raja-gopal2001416/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-        <a href="https://www.linkedin.com/in/raja-gopal2001416/" class="medium"><i class="bi bi-medium"></i></a>
-      </div>
-    </div>
-  </section><!-- End Hero -->
-
-  <!-- ======= About Section ======= -->
-  <section id="about" class="about">
-    <div class="container" data-aos="fade-up">
-      <div class="section-title">
-        <h2>About</h2>
-      </div>
-      <div class="row">
-        <img src="data:image/png;base64,...base64ProfileImageData..." style="width:20%; margin-left: 2%;">
-        <p class="me" style="width:70%; margin-left: 0%; margin-top: 2%; text-align: justify;">
-          Experienced AI Engineer, contributing to the development of cutting-edge AI software solutions at Seewise.ai...
-          <!-- Your entire about text here -->
-        </p>
-      </div>  
-    </div>    
-  </section><!-- End About Section -->
-
-  <!-- ======= Facts Section ======= -->
-  <section id="facts" class="facts">
-    <div class="container" data-aos="fade-up">
-      <div class="section-title">
-        <h2>Tools I Work with</h2>
-      </div>
-      <div class="row">
-        <div class="col-lg-8 offset-lg-1 text-center">
-          <img src="data:image/png;base64,...base64ToolImageData..." alt="" style="height:160px;">
+    <!-- Left Side Navigation Bar -->
+    <nav id="sidebar" class="bg-dark text-white">
+        <div class="sidebar-header text-center">
+            <img src="assets/profile-image.jpg" alt="Profile Image" class="profile-image">
+            <h3>Raghav</h3>
         </div>
-      </div>
-    </div>
-  </section><!-- End Facts Section -->
+        <ul class="list-unstyled components">
+            <li>
+                <a href="#about" class="nav-link" data-toggle="tooltip" data-placement="right" title="About">
+                    <i class="fas fa-user"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#projects" class="nav-link" data-toggle="tooltip" data-placement="right" title="Projects">
+                    <i class="fas fa-project-diagram"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#resume" class="nav-link" data-toggle="tooltip" data-placement="right" title="Resume">
+                    <i class="fas fa-file-alt"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#contact" class="nav-link" data-toggle="tooltip" data-placement="right" title="Contact">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
 
-  <script>
-    // Custom JavaScript for scroll animations and interactivity
-    document.addEventListener('DOMContentLoaded', function () {
-      // Scroll animations
-      var elements = document.querySelectorAll('[data-aos]');
-      elements.forEach(function (element) {
-        if (window.scrollY + window.innerHeight > element.offsetTop) {
-          element.classList.add('visible');
-        }
-      });
-    });
-  </script>
+    <!-- Main Content Area -->
+    <div id="content">
+        <!-- Hero Section -->
+        <section id="hero" class="hero text-center py-5">
+            <div class="container">
+                <div class="profile">
+                    <h1 class="display-4">Raghav Krishnakumar Sowmyanarayanan</h1>
+                    <p class="lead">Lead Data Engineer | Aspiring Data Scientist</p>
+                    <p>Explore my journey through Data Engineering and Machine Learning projects.</p>
+                    <a href="#projects" class="btn btn-primary btn-lg">Explore Projects</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-5">
+            <div class="container">
+                <h2 class="text-center" data-aos="fade-up">🚀 About Me</h2>
+                <p data-aos="fade-up" data-aos-delay="100">I have over 9 years of experience in data engineering and am transitioning to Data Science. My expertise includes building data pipelines, creating machine learning models, and solving real-world business problems using data.</p>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="bg-light py-5">
+            <div class="container">
+                <h2 class="text-center" data-aos="fade-up">📈 Projects</h2>
+                <div class="row">
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card">
+                            <img src="project1.jpg" class="card-img-top" alt="Project 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Real-Time Data Pipeline</h5>
+                                <p class="card-text">Developed a real-time data pipeline using Apache Kafka and Spark for financial analytics.</p>
+                                <a href="#" class="btn btn-primary">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resume Section -->
+        <section id="resume" class="py-5">
+            <div class="container">
+                <h2 class="text-center" data-aos="fade-up">📄 Resume</h2>
+                <p class="text-center" data-aos="fade-up" data-aos-delay="100">Download my resume or view it directly below:</p>
+                <div class="text-center">
+                    <a href="assets/Raghav_Resume.pdf" class="btn btn-success" download>Download Resume</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="bg-dark text-white py-5">
+            <div class="container">
+                <h2 class="text-center" data-aos="fade-up">📬 Get in Touch</h2>
+                <form id="contact-form" action="contact.php" method="POST" data-aos="fade-up" data-aos-delay="200">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" name="name" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-dark text-white text-center py-3">
+            <p>&copy; 2024 Raghav Krishnakumar Sowmyanarayanan. All Rights Reserved.</p>
+        </footer>
+    </div>
+
+    <!-- jQuery, Popper.js, Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 
