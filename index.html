@@ -1,44 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Personal Portfolio of Raghav Krishnakumar Sowmyanarayanan. Data Scientist Aspirant & Lead Data Engineer.">
+    <meta name="description" content="Raghav Krishnakumar Sowmyanarayanan - Data Scientist Aspirant & Lead Data Engineer Portfolio">
     <meta name="author" content="Raghav Krishnakumar Sowmyanarayanan">
     <title>Raghav Krishnakumar Sowmyanarayanan - Portfolio</title>
-    <!-- Corrected path to the CSS file inside the 'assets' folder -->
+    <!-- Link to CSS File -->
     <link rel="stylesheet" href="assets/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <!-- Navigation Bar -->
-    <nav>
-        <div class="container">
-            <div class="logo">
-                <a href="#">Raghav</a>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="#" class="logo">Raghav</a>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
             </div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <!-- Header Section -->
-    <header class="header">
-        <div class="container">
-            <h1>Hi, I'm Raghav!</h1>
-            <p>Aspiring Data Scientist | Lead Data Engineer</p>
-            <a href="#contact" class="cta-btn">Contact Me</a>
-        </div>
+        </nav>
     </header>
 
-    <!-- About Me Section -->
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm Raghav!</h1>
+            <p>Aspiring Data Scientist | Lead Data Engineer</p>
+            <a href="#contact" class="cta-btn">Let's Connect</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
     <section id="about" class="section about">
         <div class="container">
             <h2>About Me</h2>
-            <p>I'm a Data Engineer with a passion for transforming data into actionable insights. I have a strong foundation in data analysis, machine learning, and big data technologies. I'm currently expanding my skillset in Data Science and looking forward to making impactful contributions in this field.</p>
+            <p>I'm a Data Engineer with a strong foundation in machine learning and big data technologies. I am currently expanding my skills in Data Science and looking forward to making impactful contributions in the field.</p>
         </div>
     </section>
 
@@ -46,13 +48,17 @@
     <section id="projects" class="section projects">
         <div class="container">
             <h2>My Projects</h2>
-            <div class="project">
-                <h3>Predictive Model for Customer Behavior</h3>
-                <p>Built a predictive model using Python and scikit-learn to forecast customer behavior and trends.</p>
-            </div>
-            <div class="project">
-                <h3>Real-Time Data Processing Pipeline</h3>
-                <p>Developed a scalable real-time data pipeline with Apache Kafka and Apache Spark to process streaming data.</p>
+            <div class="project-cards">
+                <div class="project-card">
+                    <h3>Predictive Model for Customer Behavior</h3>
+                    <p>Built a machine learning model to forecast customer behavior and trends using Python and scikit-learn.</p>
+                    <a href="https://github.com/yourusername/project1" target="_blank" class="btn">View Project</a>
+                </div>
+                <div class="project-card">
+                    <h3>Real-Time Data Processing Pipeline</h3>
+                    <p>Developed a scalable real-time data pipeline with Apache Kafka and Apache Spark to process streaming data.</p>
+                    <a href="https://github.com/yourusername/project2" target="_blank" class="btn">View Project</a>
+                </div>
             </div>
         </div>
     </section>
@@ -61,7 +67,7 @@
     <section id="contact" class="section contact">
         <div class="container">
             <h2>Contact</h2>
-            <p>Feel free to reach out to me for collaboration or any inquiries. Let's connect!</p>
+            <p>Feel free to reach out to me for collaboration or any inquiries.</p>
             <ul>
                 <li><strong>Email:</strong> <a href="mailto:mailmeraghav123@gmail.com">mailmeraghav123@gmail.com</a></li>
                 <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/raghav-krishnakumar-sowmyanarayanan-7a703a16b/" target="_blank">LinkedIn Profile</a></li>
@@ -77,4 +83,5 @@
         </div>
     </footer>
 </body>
+
 </html>
