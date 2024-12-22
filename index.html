@@ -36,22 +36,22 @@
         </div>
         <ul class="list-unstyled components">
             <li>
-                <a href="#about" class="nav-link" data-toggle="tooltip" data-placement="right" title="About" onclick="toggleSidebar()">
+                <a href="#about" class="nav-link" data-toggle="tooltip" data-placement="right" title="About">
                     <i class="fas fa-user fa-2x"></i>
                 </a>
             </li>
             <li>
-                <a href="#projects" class="nav-link" data-toggle="tooltip" data-placement="right" title="Projects" onclick="toggleSidebar()">
+                <a href="#projects" class="nav-link" data-toggle="tooltip" data-placement="right" title="Projects">
                     <i class="fas fa-project-diagram fa-2x"></i>
                 </a>
             </li>
             <li>
-                <a href="#resume" class="nav-link" data-toggle="tooltip" data-placement="right" title="Resume" onclick="toggleSidebar()">
+                <a href="#resume" class="nav-link" data-toggle="tooltip" data-placement="right" title="Resume">
                     <i class="fas fa-file-alt fa-2x"></i>
                 </a>
             </li>
             <li>
-                <a href="#contact" class="nav-link" data-toggle="tooltip" data-placement="right" title="Contact" onclick="toggleSidebar()">
+                <a href="#contact" class="nav-link" data-toggle="tooltip" data-placement="right" title="Contact">
                     <i class="fas fa-envelope fa-2x"></i>
                 </a>
             </li>
@@ -161,11 +161,10 @@
             });
         });
 
-        // Toggle sidebar visibility on icon click
+        // Sidebar toggle when clicking the icon
         function toggleSidebar() {
             var sidebar = document.getElementById("sidebar");
-            // Close the sidebar by applying a translateX transform
-            sidebar.style.transform = "translateX(-250px)";
+            sidebar.classList.toggle("collapsed");
         }
     </script>
 
