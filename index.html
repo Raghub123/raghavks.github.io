@@ -13,35 +13,34 @@
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS (styles.css) -->
+    <link rel="stylesheet" href="assets/styles.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    
     <!-- Font Awesome Icons -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-    
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="assets/styles.css">
 </head>
 
 <body>
 
     <!-- Left Side Navigation Bar -->
-    <nav id="sidebar" class="bg-dark text-white">
+    <nav id="sidebar" class="bg-transparent text-white">
         <div class="sidebar-header text-center">
             <img src="assets/profile-image.jpg" alt="Profile Image" class="profile-image">
         </div>
         <ul class="list-unstyled components">
-            <li><a href="#about" class="nav-link"><i class="fas fa-user fa-2x"></i> About</a></li>
-            <li><a href="#projects" class="nav-link"><i class="fas fa-project-diagram fa-2x"></i> Projects</a></li>
-            <li><a href="#resume" class="nav-link"><i class="fas fa-file-alt fa-2x"></i> Resume</a></li>
-            <li><a href="#certifications" class="nav-link"><i class="fas fa-certificate fa-2x"></i> Certifications</a></li>
-            <li><a href="#coding" class="nav-link"><i class="fas fa-code fa-2x"></i> Coding</a></li>
-            <li><a href="#blogs" class="nav-link"><i class="fas fa-book fa-2x"></i> Blogs/Books</a></li>
-            <li><a href="#contact" class="nav-link"><i class="fas fa-envelope fa-2x"></i> Contact</a></li>
+            <li><a href="#about" class="nav-link" data-toggle="tooltip" title="About"><i class="fas fa-user"></i></a></li>
+            <li><a href="#projects" class="nav-link" data-toggle="tooltip" title="Projects"><i class="fas fa-project-diagram"></i></a></li>
+            <li><a href="#resume" class="nav-link" data-toggle="tooltip" title="Resume"><i class="fas fa-file-alt"></i></a></li>
+            <li><a href="#contact" class="nav-link" data-toggle="tooltip" title="Contact"><i class="fas fa-envelope"></i></a></li>
+            <li><a href="#technical-stack" class="nav-link" data-toggle="tooltip" title="Technical Stack"><i class="fas fa-cogs"></i></a></li>
+            <li><a href="#technology" class="nav-link" data-toggle="tooltip" title="Technologies I Work With"><i class="fas fa-laptop-code"></i></a></li>
         </ul>
-
-        <!-- Social Links -->
-        <div class="text-center mt-3">
-            <a href="https://github.com/Raghub123/code_repo" target="_blank" class="btn btn-dark"><i class="fab fa-github fa-2x"></i></a>
-            <a href="https://www.linkedin.com/in/raghav-krishnakumar-sowmyanarayanan-7a703a16b/" target="_blank" class="btn btn-dark"><i class="fab fa-linkedin fa-2x"></i></a>
-        </div>
     </nav>
 
     <!-- Main Content Area -->
@@ -49,11 +48,9 @@
         <!-- Hero Section -->
         <section id="hero" class="hero text-center py-5">
             <div class="container">
-                <div class="profile text-center">
+                <div class="profile">
                     <h1 class="display-4">Raghav Krishnakumar Sowmyanarayanan</h1>
-                    <p class="lead">
-                        <span id="lead-text" class="lead-text">Lead Data Engineer</span> | <span id="typed-text" class="typed-text"></span>
-                    </p>
+                    <p class="lead" id="typing-text">Lead Data Engineer | Aspiring Data Scientist</p>
                     <p>Explore my journey through Data Engineering and Machine Learning projects.</p>
                     <a href="#projects" class="btn btn-primary btn-lg">Explore Projects</a>
                 </div>
@@ -63,26 +60,59 @@
         <!-- About Section -->
         <section id="about" class="py-5">
             <div class="container">
-                <h2 class="text-center">🚀 About Me</h2>
-                <p>A highly skilled Data Engineer with 9.3+ years of experience in designing, developing, and implementing data pipelines using ETL tools like Ab Initio and Informatica PowerCenter. Proficient in data warehousing, data quality, and data integration best practices. Currently pursuing an M.Tech in Data Science and Engineering at BITS Pilani to enhance my skillset with advanced data science techniques, including machine learning, deep learning, and big data technologies..</p>
+                <h2 class="text-center" data-aos="fade-up">🚀 About Me</h2>
+                <p data-aos="fade-up" data-aos-delay="100">I have over 9 years of experience in data engineering and am transitioning to Data Science...</p>
             </div>
         </section>
 
-        <!-- Projects Section -->
-        <section id="projects" class="bg-light py-5">
+        <!-- Technical Stack Section -->
+        <section id="technical-stack" class="bg-light py-5">
             <div class="container">
-                <h2 class="text-center">📈 Projects</h2>
+                <h2 class="text-center" data-aos="fade-up">🛠 Technical Stack</h2>
                 <div class="row">
-                    <div class="col-md-4">
-                        <div class="card">
-                            <img src="project1.jpg" class="card-img-top" alt="Project 1">
-                            <div class="card-body">
-                                <h5 class="card-title">Real-Time Data Pipeline</h5>
-                                <p class="card-text">Developed a real-time data pipeline using Apache Kafka and Spark for financial analytics.</p>
-                                <a href="#" class="btn btn-primary">View Project</a>
-                            </div>
+                    <div class="col-md-4" data-aos="fade-up">
+                        <h5>ETL</h5>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 80%;">80%</div>
                         </div>
                     </div>
+                    <div class="col-md-4" data-aos="fade-up">
+                        <h5>SQL</h5>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 70%;">70%</div>
+                        </div>
+                    </div>
+                    <div class="col-md-4" data-aos="fade-up">
+                        <h5>Python</h5>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 50%;">50%</div>
+                        </div>
+                    </div>
+                    <div class="col-md-4" data-aos="fade-up">
+                        <h5>Machine Learning</h5>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 30%;">30%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technologies Section -->
+        <section id="technology" class="bg-light py-5">
+            <div class="container">
+                <h2 class="text-center" data-aos="fade-up">💻 Technologies I Work With</h2>
+                <div class="row">
+                    <!-- Add logos/icons for technologies here -->
+                    <div class="col-md-3 text-center" data-aos="fade-up">
+                        <img src="assets/technologies/python.png" alt="Python" class="img-fluid" />
+                        <p>Python</p>
+                    </div>
+                    <div class="col-md-3 text-center" data-aos="fade-up">
+                        <img src="assets/technologies/etl.png" alt="ETL" class="img-fluid" />
+                        <p>ETL</p>
+                    </div>
+                    <!-- Add more technologies here -->
                 </div>
             </div>
         </section>
@@ -90,56 +120,19 @@
         <!-- Resume Section -->
         <section id="resume" class="py-5">
             <div class="container">
-                <h2 class="text-center">📄 Resume</h2>
-                <p class="text-center">Download my resume to know more about my skills and experience.</p>
+                <h2 class="text-center" data-aos="fade-up">📄 Resume</h2>
+                <p class="text-center" data-aos="fade-up" data-aos-delay="100">Download my resume or view it directly below:</p>
                 <div class="text-center">
-                    <a href="assets/Raghav_Resume.pdf" class="btn btn-primary" download>Download Resume</a>
+                    <a href="assets/Raghav_Resume.pdf" class="btn btn-success" download>Download Resume</a>
                 </div>
-            </div>
-        </section>
-
-        <!-- Certifications Section -->
-        <section id="certifications" class="py-5">
-            <div class="container">
-                <h2 class="text-center">🏅 Certifications</h2>
-                <ul>
-                    <li>Data Science Specialization - Coursera</li>
-                    <li>Machine Learning - Stanford University</li>
-                    <li>Apache Spark and Scala - Udemy</li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- Coding Section -->
-        <section id="coding" class="bg-light py-5">
-            <div class="container">
-                <h2 class="text-center">👨‍💻 Coding</h2>
-                <p>Check out my coding contributions:</p>
-                <ul>
-                    <li>GitHub Repositories: <a href="https://github.com/yourusername" target="_blank">My GitHub</a></li>
-                    <li>Code Challenges: <a href="https://www.hackerrank.com/yourusername" target="_blank">My HackerRank</a></li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- Blogs/Books Section -->
-        <section id="blogs" class="py-5">
-            <div class="container">
-                <h2 class="text-center">📚 Blogs and Books</h2>
-                <p>Here are a few books and blogs that I follow:</p>
-                <ul>
-                    <li>Data Science for Business - Foster Provost & Tom Fawcett</li>
-                    <li>Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow - Aurélien Géron</li>
-                    <li>Blogs: <a href="https://towardsdatascience.com/" target="_blank">Towards Data Science</a></li>
-                </ul>
             </div>
         </section>
 
         <!-- Contact Section -->
         <section id="contact" class="bg-dark text-white py-5">
             <div class="container">
-                <h2 class="text-center">📬 Get in Touch</h2>
-                <form id="contact-form" action="contact.php" method="POST">
+                <h2 class="text-center" data-aos="fade-up">📬 Get in Touch</h2>
+                <form id="contact-form" action="contact.php" method="POST" data-aos="fade-up" data-aos-delay="200">
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <label for="name">Name</label>
@@ -165,60 +158,17 @@
         </footer>
     </div>
 
-    <!-- jQuery, Bootstrap JS -->
+    <!-- jQuery, Popper.js, Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        // Smooth scrolling for navigation
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-
-        // Typing Effect for Lead Data Engineer and Aspiring Data Scientist
-        const typedText = document.getElementById("typed-text");
-        const leadText = document.getElementById("lead-text");
-        const text1 = "Lead Data Engineer";
-        const text2 = "Aspiring Data Scientist";
-
-        let i = 0;
-        let currentText = text1;
-
-        function typeWriter() {
-            if (i < currentText.length) {
-                typedText.innerHTML += currentText.charAt(i);
-                i++;
-                setTimeout(typeWriter, 100);
-            } else {
-                // Switch to the next text after first finishes typing
-                if (currentText === text1) {
-                    setTimeout(() => {
-                        leadText.style.transition = "opacity 2s ease";
-                        leadText.style.opacity = "0"; // Fade out "Lead Data Engineer"
-                    }, 1000);
-                    setTimeout(() => {
-                        i = 0;
-                        currentText = text2;
-                        typedText.style.fontSize = "30px";
-                        typedText.style.color = "black"; // Change color to black
-                        typedText.innerHTML = ""; // Clear previous text
-                        typeWriter();
-                    }, 2000);  // Fade out time for "Lead Data Engineer"
-                }
-            }
-        }
-
-        window.onload = function () {
-            typeWriter();
-        };
+        AOS.init();
     </script>
-
+    <script src="assets/typing.js"></script>
 </body>
 
 </html>
