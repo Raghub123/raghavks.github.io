@@ -12,19 +12,14 @@ body {
     bottom: 0;
     left: 0;
     width: 250px;
-    background-color: #333; /* Darker background for sidebar */
+    background-color: #333;
     padding-top: 20px;
 }
 
 #sidebar .profile-image {
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
-}
-
-#sidebar h3 {
-    color: #fff;
-    font-size: 20px;
+    width: 80px;
+    height: 80px;
 }
 
 #sidebar .nav-link {
@@ -37,19 +32,22 @@ body {
     background-color: #444;
 }
 
-#sidebar .fa-2x {
-    font-size: 30px;
+/* Profile Image on Hero Section */
+.profile-image-lg {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
 }
 
 /* Hero Section */
 #hero {
-    background-color: #007bff; /* Lighter blue background */
+    background-color: #007bff;
     color: white;
     padding: 100px 0;
 }
 
 #hero .btn-primary {
-    background-color: #28a745; /* Green button */
+    background-color: #28a745;
     border-color: #28a745;
 }
 
@@ -58,12 +56,14 @@ body {
     border-color: #1e7e34;
 }
 
+#hero .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 /* Footer */
 footer {
     background-color: #333;
     color: white;
-}
-
-footer p {
-    margin: 0;
 }
