@@ -36,22 +36,22 @@
         </div>
         <ul class="list-unstyled components">
             <li>
-                <a href="#about" class="nav-link" data-toggle="tooltip" data-placement="right" title="About">
+                <a href="#about" class="nav-link" data-toggle="tooltip" data-placement="right" title="About" onclick="toggleSidebar()">
                     <i class="fas fa-user fa-2x"></i>
                 </a>
             </li>
             <li>
-                <a href="#projects" class="nav-link" data-toggle="tooltip" data-placement="right" title="Projects">
+                <a href="#projects" class="nav-link" data-toggle="tooltip" data-placement="right" title="Projects" onclick="toggleSidebar()">
                     <i class="fas fa-project-diagram fa-2x"></i>
                 </a>
             </li>
             <li>
-                <a href="#resume" class="nav-link" data-toggle="tooltip" data-placement="right" title="Resume">
+                <a href="#resume" class="nav-link" data-toggle="tooltip" data-placement="right" title="Resume" onclick="toggleSidebar()">
                     <i class="fas fa-file-alt fa-2x"></i>
                 </a>
             </li>
             <li>
-                <a href="#contact" class="nav-link" data-toggle="tooltip" data-placement="right" title="Contact">
+                <a href="#contact" class="nav-link" data-toggle="tooltip" data-placement="right" title="Contact" onclick="toggleSidebar()">
                     <i class="fas fa-envelope fa-2x"></i>
                 </a>
             </li>
@@ -148,9 +148,20 @@
     <!-- AOS Animation Library -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
+        // Initialize AOS
         AOS.init();
-    </script>
 
-</body>
+        // Smooth scrolling for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
 
-</html>
+        // Toggle sidebar visibility on icon click
+        function toggleSidebar() {
+            var sidebar = document.getElementById("sidebar");
+           
