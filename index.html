@@ -87,6 +87,17 @@
             </div>
         </section>
 
+        <!-- Resume Section -->
+        <section id="resume" class="py-5">
+            <div class="container">
+                <h2 class="text-center">📄 Resume</h2>
+                <p class="text-center">Download my resume to know more about my skills and experience.</p>
+                <div class="text-center">
+                    <a href="assets/Raghav_Resume.pdf" class="btn btn-primary" download>Download Resume</a>
+                </div>
+            </div>
+        </section>
+
         <!-- Certifications Section -->
         <section id="certifications" class="py-5">
             <div class="container">
@@ -170,29 +181,41 @@
             });
         });
 
-        // Typing Effect
+        // Typing Effect for Lead Data Engineer and Aspiring Data Scientist
         const typedText = document.getElementById("typed-text");
         const leadText = document.getElementById("lead-text");
-        const text = "Aspiring Data Scientist";
+        const text1 = "Lead Data Engineer";
+        const text2 = "Aspiring Data Scientist";
 
         let i = 0;
+        let currentText = text1;
+
         function typeWriter() {
-            if (i < text.length) {
-                typedText.innerHTML += text.charAt(i);
+            if (i < currentText.length) {
+                typedText.innerHTML += currentText.charAt(i);
                 i++;
-                setTimeout(typeWriter, 100); // Delay to create typing effect
+                setTimeout(typeWriter, 100);
+            } else {
+                // Switch to the next text after first finishes typing
+                if (currentText === text1) {
+                    setTimeout(() => {
+                        leadText.style.transition = "opacity 2s ease";
+                        leadText.style.opacity = "0"; // Fade out "Lead Data Engineer"
+                    }, 1000);
+                    setTimeout(() => {
+                        i = 0;
+                        currentText = text2;
+                        typedText.style.fontSize = "30px";
+                        typedText.style.color = "black"; // Change color to black
+                        typedText.innerHTML = ""; // Clear previous text
+                        typeWriter();
+                    }, 2000);  // Fade out time for "Lead Data Engineer"
+                }
             }
         }
 
         window.onload = function () {
-            // Start typing effect
             typeWriter();
-
-            // After typing, fade out the lead text
-            setTimeout(() => {
-                leadText.style.transition = "opacity 2s ease";
-                leadText.style.opacity = "0"; // Fade out "Lead Data Engineer"
-            }, 3000);  // Fade out after typing effect is finished
         };
     </script>
 
