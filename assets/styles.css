@@ -20,6 +20,7 @@ body {
     border-radius: 50%;
     width: 80px;
     height: 80px;
+    margin-bottom: 10px;
 }
 
 #sidebar .nav-link {
@@ -30,13 +31,6 @@ body {
 
 #sidebar .nav-link:hover {
     background-color: #444;
-}
-
-/* Profile Image on Hero Section */
-.profile-image-lg {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
 }
 
 /* Hero Section */
@@ -58,8 +52,21 @@ body {
 
 #hero .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-direction: column;
     align-items: center;
+}
+
+/* About Section */
+#about {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/* Projects Section */
+#projects {
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 /* Footer */
