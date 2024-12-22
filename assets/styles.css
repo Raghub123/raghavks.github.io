@@ -12,10 +12,11 @@ body {
     top: 0;
     left: 0;
     width: 250px;
-    background-color: #333;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
     padding-top: 20px;
     height: 100%;
     transition: transform 0.3s ease;
+    z-index: 999;
 }
 
 #sidebar .profile-image {
@@ -35,8 +36,9 @@ body {
     background-color: #444;
 }
 
-#sidebar .active {
-    background-color: #007bff;
+/* Sidebar Collapse Class */
+#sidebar.collapsed {
+    transform: translateX(-250px); /* Sidebar hides */
 }
 
 /* Hero Section */
@@ -44,35 +46,6 @@ body {
     background-color: #007bff;
     color: white;
     padding: 100px 0;
-}
-
-#hero .btn-primary {
-    background-color: #28a745;
-    border-color: #28a745;
-}
-
-#hero .btn-primary:hover {
-    background-color: #218838;
-    border-color: #1e7e34;
-}
-
-#hero .container {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-
-/* About Section */
-#about {
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-
-/* Projects Section */
-#projects {
-    padding-top: 50px;
-    padding-bottom: 50px;
 }
 
 /* Footer */
