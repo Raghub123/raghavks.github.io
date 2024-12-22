@@ -103,6 +103,18 @@ h2 {
     text-align: center;
 }
 
+.skills-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.skills-list li {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
 /* Projects Section */
 .projects {
     background-color: #f4f4f4;
@@ -141,83 +153,43 @@ h2 {
 }
 
 .project-card .btn {
-    background-color: #ff6347;
+    background-color: #1a202c;
     color: white;
     padding: 10px 20px;
-    border-radius: 4px;
     text-decoration: none;
-    font-size: 1rem;
-    transition: background-color 0.3s;
+    font-size: 1.1rem;
+    border-radius: 4px;
+    margin-top: 10px;
 }
 
 .project-card .btn:hover {
-    background-color: #ff4500;
+    background-color: #ff6347;
 }
 
 /* Contact Section */
 .contact ul {
     list-style: none;
-    padding: 0;
     text-align: center;
 }
 
-.contact ul li {
+.contact li {
     font-size: 1.2rem;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
-.contact ul li a {
+.contact a {
+    color: #1a202c;
     text-decoration: none;
-    color: #ff6347;
-    font-weight: 500;
 }
 
-.contact ul li a:hover {
-    color: #ff4500;
+.contact a:hover {
+    color: #ff6347;
 }
 
 /* Footer */
 footer {
     background-color: #1a202c;
-    color: #ffffff;
+    color: white;
     text-align: center;
     padding: 20px 0;
-}
-
-footer p {
-    font-size: 1rem;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .container {
-        width: 90%;
-    }
-
-    .navbar .nav-links {
-        text-align: center;
-        float: none;
-    }
-
-    .navbar .nav-links li {
-        display: block;
-        margin: 10px 0;
-    }
-
-    .hero h1 {
-        font-size: 2.5rem;
-    }
-
-    .hero p {
-        font-size: 1.2rem;
-    }
-
-    .project-cards {
-        flex-direction: column;
-    }
-
-    .project-card {
-        width: 90%;
-        margin: 20px auto;
-    }
 }
