@@ -1,224 +1,865 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Raghav Krishnakumar Sowmyanarayanan - Data Scientist/ML Aspirant | Lead Data Engineer">
-    <meta name="author" content="Raghav Krishnakumar Sowmyanarayanan">
-    <meta name="keywords" content="Data Science, Machine Learning, Data Engineer, Portfolio">
-    <meta name="robots" content="index, follow">
-    <title>Raghav Krishnakumar Sowmyanarayanan - Portfolio</title>
-    
-    <!-- Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    
-    <!-- Font Awesome Icons -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-    
-    <!-- Custom CSS -->
+
+    <meta name="description"
+          content="Raghav Krishnakumar — Data & AI Solution Architect specializing in data engineering, intelligent document processing, automation and AI/ML.">
+
+    <meta name="author" content="Raghav Krishnakumar">
+
+    <title>Raghav Krishnakumar | Data & AI Solution Architect</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Main CSS -->
     <link rel="stylesheet" href="assets/styles.css">
 </head>
 
 <body>
 
-    <!-- Left Side Navigation Bar -->
-    <nav id="sidebar" class="bg-dark text-white">
-        <div class="sidebar-header text-center">
-            <img src="assets/profile-image.jpg" alt="Profile Image" class="profile-image">
+<!-- =========================
+     NAVIGATION
+========================= -->
+
+<header class="navbar">
+
+    <div class="nav-container">
+
+        <a href="#home" class="logo">
+            R<span>K</span>
+        </a>
+
+        <nav class="nav-links">
+
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#architecture">Architecture</a>
+            <a href="#experience">Experience</a>
+            <a href="#contact">Contact</a>
+
+        </nav>
+
+        <div class="nav-actions">
+
+            <a href="https://github.com/raghavks"
+               target="_blank"
+               aria-label="GitHub">
+                <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/raghav-krishnakumar-sowmyanarayanan-7a703a16b/"
+               target="_blank"
+               aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+
         </div>
-        <ul class="list-unstyled components">
-            <li><a href="#about" class="nav-link"><i class="fas fa-user fa-2x"></i> About</a></li>
-            <li><a href="#projects" class="nav-link"><i class="fas fa-project-diagram fa-2x"></i> Projects</a></li>
-            <li><a href="#resume" class="nav-link"><i class="fas fa-file-alt fa-2x"></i> Resume</a></li>
-            <li><a href="#certifications" class="nav-link"><i class="fas fa-certificate fa-2x"></i> Certifications</a></li>
-            <li><a href="#coding" class="nav-link"><i class="fas fa-code fa-2x"></i> Coding</a></li>
-            <li><a href="#blogs" class="nav-link"><i class="fas fa-book fa-2x"></i> Blogs/Books</a></li>
-            <li><a href="#contact" class="nav-link"><i class="fas fa-envelope fa-2x"></i> Contact</a></li>
-        </ul>
 
-        <!-- Social Links -->
-        <div class="text-center mt-3">
-            <a href="https://github.com/yourusername" target="_blank" class="btn btn-dark"><i class="fab fa-github fa-2x"></i></a>
-            <a href="https://linkedin.com/in/yourlinkedin" target="_blank" class="btn btn-dark"><i class="fab fa-linkedin fa-2x"></i></a>
-        </div>
-    </nav>
-
-    <!-- Main Content Area -->
-    <div id="content">
-        <!-- Hero Section -->
-        <section id="hero" class="hero text-center py-5">
-            <div class="container">
-                <div class="profile text-center">
-                    <h1 class="display-4">Raghav Krishnakumar Sowmyanarayanan</h1>
-                    <p class="lead">
-                        <span id="lead-text" class="lead-text">Technology Architect </span> | <span id="typed-text" class="typed-text"></span>
-                    </p>
-                    <p>Explore my journey through Data Engineering and Machine Learning projects.</p>
-                    <a href="#projects" class="btn btn-primary btn-lg">Explore Projects</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- About Section -->
-        <section id="about" class="py-5">
-            <div class="container">
-                <h2 class="text-center">🚀 About Me</h2>
-                <p>A highly skilled Data Solution architect  and AI/ML engineer with 11 years of experience in designing, developing, and implementing data pipelines using ETL tools like Ab Initio and Informatica PowerCenter. Proficient in data warehousing, data quality, and data integration best practices. Currently pursuing an M.Tech in Data Science and Engineering at BITS Pilani to enhance my skillset with advanced data science techniques, including machine learning, deep learning, and big data technologies..</p>
-            </div>
-        </section>
-
-        <!-- Projects Section -->
-        <section id="projects" class="bg-light py-5">
-            <div class="container">
-                <h2 class="text-center">📈 Projects</h2>
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="card">
-                            <img src="project1.jpg" class="card-img-top" alt="Project 1">
-                            <div class="card-body">
-                                <h5 class="card-title">Real-Time Data Pipeline</h5>
-                                <p class="card-text">Developed a real-time data pipeline using Apache Kafka and Spark for financial analytics.</p>
-                                <a href="#" class="btn btn-primary">View Project</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Resume Section -->
-        <section id="resume" class="py-5">
-            <div class="container">
-                <h2 class="text-center">📄 Resume</h2>
-                <p class="text-center">Download my resume to know more about my skills and experience.</p>
-                <div class="text-center">
-                    <a href="assets/Raghav_Resume.pdf" class="btn btn-primary" download>Download Resume</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Certifications Section -->
-        <section id="certifications" class="py-5">
-            <div class="container">
-                <h2 class="text-center">🏅 Certifications</h2>
-                <ul>
-                    <li>Data Science Specialization - Coursera</li>
-                    <li>Machine Learning - Stanford University</li>
-                    <li>Apache Spark and Scala - Udemy</li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- Coding Section -->
-        <section id="coding" class="bg-light py-5">
-            <div class="container">
-                <h2 class="text-center">👨‍💻 Coding</h2>
-                <p>Check out my coding contributions:</p>
-                <ul>
-                    <li>GitHub Repositories: <a href="https://github.com/yourusername" target="_blank">My GitHub</a></li>
-                    <li>Code Challenges: <a href="https://www.hackerrank.com/yourusername" target="_blank">My HackerRank</a></li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- Blogs/Books Section -->
-        <section id="blogs" class="py-5">
-            <div class="container">
-                <h2 class="text-center">📚 Blogs and Books</h2>
-                <p>Here are a few books and blogs that I follow:</p>
-                <ul>
-                    <li>Data Science for Business - Foster Provost & Tom Fawcett</li>
-                    <li>Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow - Aurélien Géron</li>
-                    <li>Blogs: <a href="https://towardsdatascience.com/" target="_blank">Towards Data Science</a></li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="bg-dark text-white py-5">
-            <div class="container">
-                <h2 class="text-center">📬 Get in Touch</h2>
-                <form id="contact-form" action="contact.php" method="POST">
-                    <div class="form-row">
-                        <div class="form-group col-md-6">
-                            <label for="name">Name</label>
-                            <input type="text" class="form-control" id="name" name="name" required>
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label for="email">Email</label>
-                            <input type="email" class="form-control" id="email" name="email" required>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                </form>
-            </div>
-        </section>
-
-        <!-- Footer -->
-        <footer class="bg-dark text-white text-center py-3">
-            <p>&copy; 2024 Raghav Krishnakumar Sowmyanarayanan. All Rights Reserved.</p>
-        </footer>
     </div>
 
-    <!-- jQuery, Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</header>
 
-    <script>
-        // Smooth scrolling for navigation
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section id="home" class="hero">
+
+    <div class="hero-grid"></div>
+
+    <div class="hero-container">
+
+        <div class="hero-content">
+
+            <div class="availability">
+                <span></span>
+                Open to Data & AI opportunities
+            </div>
+
+            <p class="eyebrow">
+                DATA • AI • ARCHITECTURE
+            </p>
+
+            <h1>
+                Building intelligent
+                <span>data solutions.</span>
+            </h1>
+
+            <p class="hero-description">
+                I'm Raghav, a Data & AI Solution Architect with 11+ years
+                of experience building enterprise data platforms,
+                pipelines, analytics solutions and AI-powered applications.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#projects" class="btn btn-primary">
+                    Explore Projects
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+                <a href="assets/Raghav_Resume.pdf"
+                   class="btn btn-secondary"
+                   target="_blank">
+                    <i class="fa-solid fa-file-arrow-down"></i>
+                    Resume
+                </a>
+
+            </div>
+
+            <div class="hero-social">
+
+                <a href="https://github.com/raghavks"
+                   target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                    GitHub
+                </a>
+
+                <a href="https://www.linkedin.com/in/raghav-krishnakumar-sowmyanarayanan-7a703a16b/"
+                   target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                    LinkedIn
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- Architecture visual -->
+
+        <div class="hero-visual">
+
+            <div class="architecture-card">
+
+                <div class="terminal-header">
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </div>
+
+                <div class="terminal-body">
+
+                    <p class="terminal-comment">
+                        // Data solution architecture
+                    </p>
+
+                    <p>
+                        <span class="code-blue">INPUT</span>
+                        →
+                        <span class="code-purple">PROCESS</span>
+                    </p>
+
+                    <p>
+                        PDF / Excel / APIs
+                    </p>
+
+                    <p class="arrow">
+                        ↓
+                    </p>
+
+                    <p>
+                        <span class="code-green">PYTHON</span>
+                        +
+                        <span class="code-green">PYSPARK</span>
+                    </p>
+
+                    <p class="arrow">
+                        ↓
+                    </p>
+
+                    <p>
+                        <span class="code-blue">DATA PLATFORM</span>
+                    </p>
+
+                    <p>
+                        Snowflake / Databricks
+                    </p>
+
+                    <p class="arrow">
+                        ↓
+                    </p>
+
+                    <p>
+                        <span class="code-purple">AI / ANALYTICS</span>
+                    </p>
+
+                    <div class="cursor"></div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     STATS
+========================= -->
+
+<section class="stats">
+
+    <div class="stats-container">
+
+        <div class="stat">
+            <strong>11+</strong>
+            <span>Years Experience</span>
+        </div>
+
+        <div class="stat">
+            <strong>Data</strong>
+            <span>Architecture</span>
+        </div>
+
+        <div class="stat">
+            <strong>AI</strong>
+            <span>Engineering</span>
+        </div>
+
+        <div class="stat">
+            <strong>Cloud</strong>
+            <span>Data Platforms</span>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     ABOUT
+========================= -->
+
+<section id="about" class="section">
+
+    <div class="section-container">
+
+        <div class="section-heading">
+
+            <span>01 — ABOUT</span>
+
+            <h2>
+                From data engineering
+                to intelligent systems.
+            </h2>
+
+        </div>
+
+
+        <div class="about-grid">
+
+            <div class="about-text">
+
+                <p>
+                    I specialize in designing and building data solutions
+                    that transform complex and fragmented information
+                    into reliable, actionable business assets.
+                </p>
+
+                <p>
+                    My background spans enterprise ETL, data architecture,
+                    cloud modernization, analytics and emerging AI/ML
+                    technologies.
+                </p>
+
+                <p>
+                    Currently, I'm focused on combining strong data
+                    engineering foundations with AI to solve practical
+                    business problems.
+                </p>
+
+            </div>
+
+
+            <div class="skills-grid">
+
+                <div class="skill-card">
+                    <i class="fa-solid fa-database"></i>
+                    <h3>Data Engineering</h3>
+                    <p>ETL, pipelines, SQL, PySpark & data platforms</p>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fa-solid fa-brain"></i>
+                    <h3>AI / ML</h3>
+                    <p>Machine learning, NLP, RAG & intelligent automation</p>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fa-solid fa-diagram-project"></i>
+                    <h3>Architecture</h3>
+                    <p>Data architecture, solution design & modernization</p>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <h3>Analytics</h3>
+                    <p>BI, dashboards, insights & decision systems</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     FEATURED PROJECTS
+========================= -->
+
+<section id="projects" class="section projects-section">
+
+    <div class="section-container">
+
+        <div class="section-heading">
+
+            <span>02 — FLAGSHIP PROJECTS</span>
+
+            <h2>
+                Building solutions,
+                not just demos.
+            </h2>
+
+            <p>
+                Practical projects designed around real-world
+                business problems.
+            </p>
+
+        </div>
+
+
+        <div class="projects-grid">
+
+
+            <!-- PDF PROJECT -->
+
+            <article class="project-card featured-project">
+
+                <div class="project-number">
+                    01
+                </div>
+
+                <div class="project-icon">
+                    <i class="fa-solid fa-file-pdf"></i>
+                </div>
+
+                <span class="project-category">
+                    DOCUMENT INTELLIGENCE
+                </span>
+
+                <h3>
+                    PDF Information Extraction Engine
+                </h3>
+
+                <p>
+                    An intelligent document processing pipeline that
+                    extracts structured information from complex PDFs,
+                    classifies documents and converts unstructured
+                    content into usable data.
+                </p>
+
+
+                <div class="pipeline">
+
+                    <span>PDF</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                    <span>OCR</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                    <span>EXTRACT</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                    <span>VALIDATE</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                    <span>JSON / XLSX</span>
+
+                </div>
+
+
+                <div class="tech-stack">
+
+                    <span>Python</span>
+                    <span>OCR</span>
+                    <span>Streamlit</span>
+                    <span>AI</span>
+
+                </div>
+
+
+                <div class="project-links">
+
+                    <a href="#" class="project-link">
+                        View Case Study
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+
+                    <a href="#" class="project-link secondary-link">
+                        GitHub
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- EXCEL PROJECT -->
+
+            <article class="project-card">
+
+                <div class="project-number">
+                    02
+                </div>
+
+                <div class="project-icon excel-icon">
+                    <i class="fa-solid fa-file-excel"></i>
+                </div>
+
+                <span class="project-category">
+                    DATA AUTOMATION
+                </span>
+
+                <h3>
+                    Excel Automation & Data Quality Engine
+                </h3>
+
+                <p>
+                    Automated Excel processing for cleaning,
+                    validation, transformation, reconciliation
+                    and report generation.
+                </p>
+
+
+                <div class="pipeline">
+
+                    <span>RAW XLSX</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                    <span>CLEAN</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                    <span>VALIDATE</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                    <span>REPORT</span>
+
+                </div>
+
+
+                <div class="tech-stack">
+
+                    <span>Python</span>
+                    <span>Pandas</span>
+                    <span>OpenPyXL</span>
+                    <span>Excel</span>
+
+                </div>
+
+
+                <div class="project-links">
+
+                    <a href="#" class="project-link">
+                        View Case Study
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+
+                    <a href="#" class="project-link secondary-link">
+                        GitHub
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     ARCHITECTURE
+========================= -->
+
+<section id="architecture" class="section architecture-section">
+
+    <div class="section-container">
+
+        <div class="section-heading">
+
+            <span>03 — ARCHITECTURE</span>
+
+            <h2>
+                Designing the complete
+                data journey.
+            </h2>
+
+        </div>
+
+
+        <div class="architecture-flow">
+
+            <div class="architecture-node">
+                <i class="fa-solid fa-file"></i>
+                <strong>Sources</strong>
+                <small>PDF • Excel • APIs</small>
+            </div>
+
+            <div class="flow-line"></div>
+
+            <div class="architecture-node">
+                <i class="fa-solid fa-gears"></i>
+                <strong>Processing</strong>
+                <small>Python • Spark • ETL</small>
+            </div>
+
+            <div class="flow-line"></div>
+
+            <div class="architecture-node">
+                <i class="fa-solid fa-database"></i>
+                <strong>Data Platform</strong>
+                <small>Snowflake • Databricks</small>
+            </div>
+
+            <div class="flow-line"></div>
+
+            <div class="architecture-node">
+                <i class="fa-solid fa-brain"></i>
+                <strong>Intelligence</strong>
+                <small>ML • RAG • AI</small>
+            </div>
+
+            <div class="flow-line"></div>
+
+            <div class="architecture-node">
+                <i class="fa-solid fa-chart-column"></i>
+                <strong>Insights</strong>
+                <small>BI • Analytics</small>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     EXPERIENCE
+========================= -->
+
+<section id="experience" class="section">
+
+    <div class="section-container">
+
+        <div class="section-heading">
+
+            <span>04 — EXPERIENCE</span>
+
+            <h2>
+                Enterprise experience,
+                applied to modern data.
+            </h2>
+
+        </div>
+
+
+        <div class="timeline">
+
+            <div class="timeline-item">
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-content">
+
+                    <span class="timeline-date">
+                        CURRENT
+                    </span>
+
+                    <h3>
+                        Technology Architect
+                    </h3>
+
+                    <p>
+                        Data architecture, enterprise modernization,
+                        cloud data platforms and AI-enabled solutions.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="timeline-item">
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-content">
+
+                    <span class="timeline-date">
+                        PREVIOUS
+                    </span>
+
+                    <h3>
+                        Data Engineering & ETL
+                    </h3>
+
+                    <p>
+                        Enterprise ETL development, data integration,
+                        data warehousing and BI modernization.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="timeline-item">
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-content">
+
+                    <span class="timeline-date">
+                        EDUCATION
+                    </span>
+
+                    <h3>
+                        M.Tech — Data Science & Engineering
+                    </h3>
+
+                    <p>
+                        BITS Pilani — advanced data science,
+                        machine learning and engineering.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     TECHNOLOGIES
+========================= -->
+
+<section class="technology-section">
+
+    <div class="section-container">
+
+        <p class="technology-label">
+            TECHNOLOGIES I WORK WITH
+        </p>
+
+        <div class="technology-list">
+
+            <span>Python</span>
+            <span>PySpark</span>
+            <span>SQL</span>
+            <span>Snowflake</span>
+            <span>Databricks</span>
+            <span>Kafka</span>
+            <span>Machine Learning</span>
+            <span>RAG</span>
+            <span>LLMs</span>
+            <span>Tableau</span>
+            <span>Power BI</span>
+            <span>Neo4j</span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     CONTACT
+========================= -->
+
+<section id="contact" class="section contact-section">
+
+    <div class="section-container">
+
+        <div class="contact-box">
+
+            <div>
+
+                <span class="section-label">
+                    05 — CONTACT
+                </span>
+
+                <h2>
+                    Have a data problem?
+                    <span>Let's build a solution.</span>
+                </h2>
+
+                <p>
+                    I'm interested in practical data engineering,
+                    automation, analytics and AI projects.
+                </p>
+
+            </div>
+
+
+            <div class="contact-buttons">
+
+                <a href="mailto:mailmeraghav123@gmail.com"
+                   class="btn btn-primary">
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                    Email Me
+
+                </a>
+
+
+                <a href="https://www.linkedin.com/in/raghav-krishnakumar-sowmyanarayanan-7a703a16b/"
+                   target="_blank"
+                   class="btn btn-secondary">
+
+                    <i class="fa-brands fa-linkedin"></i>
+
+                    LinkedIn
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+    <div class="footer-container">
+
+        <div>
+            <strong>Raghav Krishnakumar</strong>
+            <p>
+                Data & AI Solution Architect
+            </p>
+        </div>
+
+        <div class="footer-links">
+
+            <a href="https://github.com/raghavks"
+               target="_blank">
+                GitHub
+            </a>
+
+            <a href="https://www.linkedin.com/in/raghav-krishnakumar-sowmyanarayanan-7a703a16b/"
+               target="_blank">
+                LinkedIn
+            </a>
+
+            <a href="mailto:mailmeraghav123@gmail.com">
+                Email
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="copyright">
+        © 2026 Raghav Krishnakumar. Built with Python, Data & AI.
+    </div>
+
+</footer>
+
+
+<!-- =========================
+     JAVASCRIPT
+========================= -->
+
+<script>
+
+    // Reveal animation
+
+    const observer = new IntersectionObserver(
+        (entries) => {
+
+            entries.forEach(entry => {
+
+                if (entry.isIntersecting) {
+
+                    entry.target.classList.add("visible");
+
+                }
+
             });
+
+        },
+        {
+            threshold: 0.12
+        }
+    );
+
+
+    document.querySelectorAll(
+        ".section-heading, .project-card, .skill-card, .timeline-item, .architecture-node"
+    ).forEach(element => {
+
+        element.classList.add("reveal");
+
+        observer.observe(element);
+
+    });
+
+
+    // Mobile menu preparation
+
+    const navLinks = document.querySelectorAll(".nav-links a");
+
+    navLinks.forEach(link => {
+
+        link.addEventListener("click", () => {
+
+            document.body.classList.remove("menu-open");
+
         });
 
-        // Typing Effect for Lead Data Engineer and Aspiring Data Scientist
-        const typedText = document.getElementById("typed-text");
-        const leadText = document.getElementById("lead-text");
-        const text1 = "Lead Data Engineer";
-        const text2 = "Aspiring Data Scientist";
+    });
 
-        let i = 0;
-        let currentText = text1;
-
-        function typeWriter() {
-            if (i < currentText.length) {
-                typedText.innerHTML += currentText.charAt(i);
-                i++;
-                setTimeout(typeWriter, 100);
-            } else {
-                // Switch to the next text after first finishes typing
-                if (currentText === text1) {
-                    setTimeout(() => {
-                        leadText.style.transition = "opacity 2s ease";
-                        leadText.style.opacity = "0"; // Fade out "Lead Data Engineer"
-                    }, 1000);
-                    setTimeout(() => {
-                        i = 0;
-                        currentText = text2;
-                        typedText.style.fontSize = "30px";
-                        typedText.style.color = "black"; // Change color to black
-                        typedText.innerHTML = ""; // Clear previous text
-                        typeWriter();
-                    }, 2000);  // Fade out time for "Lead Data Engineer"
-                }
-            }
-        }
-
-        window.onload = function () {
-            typeWriter();
-        };
-    </script>
+</script>
 
 </body>
-
 </html>
