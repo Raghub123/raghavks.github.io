@@ -1,0 +1,19 @@
+# GitHub Pages / Jekyll configuration
+title: "Raghav KS | Data Solution Architect"
+description: "Data Solution Architect focused on modern data platforms, AI-enabled systems and data engineering."
+url: "https://raghavks.github.io"
+baseurl: ""
+
+author:
+  name: "Raghav Krishnakumar Sowmyanarayanan"
+  email: "mailmeraghav123@gmail.com"
+  url: "https://www.linkedin.com/in/raghav-krishnakumar-sowmyanarayanan-7a703a16b/"
+
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+exclude:
+  - README.md
+  - "*.zip"
