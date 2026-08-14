@@ -1,0 +1,186 @@
+/* General Styles */
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f7fa;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Navigation */
+.navbar {
+  background-color: #007bff;
+}
+
+.navbar .nav-link {
+  color: #fff;
+}
+
+.nav-link.active {
+  color: #ffcc00;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-nav .nav-item {
+  margin: 0 15px;
+}
+
+.navbar-nav .nav-link {
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffcc00;
+}
+
+/* Hero Section */
+#hero {
+  background-color: #007bff;
+  color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+#hero p {
+  font-size: 1.5rem;
+}
+
+.social-links {
+  margin-top: 20px;
+}
+
+.social-links a {
+  font-size: 24px;
+  color: white;
+  margin: 0 15px;
+  transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #ffcc00;
+}
+
+/* Section Title */
+.section-title h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* About Section */
+.about {
+  padding: 60px 0;
+}
+
+.about img {
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.about p {
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+/* Facts Section */
+.facts {
+  background-color: #ffffff;
+  padding: 60px 0;
+}
+
+.facts img {
+  max-width: 150px;
+  margin: 20px;
+}
+
+/* Footer Section */
+footer {
+  background-color: #007bff;
+  color: white;
+  padding: 40px 0;
+  text-align: center;
+}
+
+footer p {
+  font-size: 16px;
+}
+
+/* Scroll Animation */
+.aos-animate {
+  opacity: 0;
+  transform: translate3d(0, 40px, 0);
+  animation: aos-init 1s ease-out forwards;
+}
+
+@keyframes aos-init {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 40px, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  #hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .social-links a {
+    font-size: 20px;
+  }
+
+  .about img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar {
+    text-align: center;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .navbar-nav .nav-item {
+    margin: 10px 0;
+  }
+
+  #hero h1 {
+    font-size: 2rem;
+  }
+
+  .social-links {
+    margin-top: 15px;
+  }
+}
